@@ -235,3 +235,82 @@ MoveTutor_Text_ExplosionTaught:
 	.string "to ignite my own EXPLOSION…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
+
+LilycoveCity_DepartmentStore_4F_Text_TutorWelcome:
+	.string "Oh hey. I'm the move tutor.\p"
+	.string "Would you like to teach new moves to\n"
+	.string "your Pokémon?$"
+
+LilycoveCity_DepartmentStore_4F_Text_WhichMoveTeach:
+	.string "Which move should I teach?$"
+
+LilycoveCity_DepartmentStore_4F_Text_TheMoveIsIt:
+	.string "The move {STR_VAR_1}, is it?$"
+
+LilycoveCity_DepartmentStore_4F_Text_PleaseChoosePkmn:
+	.string "Okay, please choose your Pokémon.$"
+
+LilycoveCity_DepartmentStore_4F_Text_AndDone:
+	.string "All done.\p"
+	.string "Come back if you want to learn more.$"
+
+LilycoveCity_DepartmentStore_4F_Text_PleaseVisitAgain:
+	.string "Come back if you change your mind.$"
+
+LilycoveCity_DepartmentStore_4F_Text_Debug:
+	.string "Debug.$"
+
+LilycoveCity_DepartmentStore_4F_Text_RolloutDesc::
+	.string "An attack lasting\n"
+	.string "5 turns with\n"
+	.string "rising intensity.$"
+
+LilycoveCity_DepartmentStore_4F_Text_FuryCutterDesc::
+	.string "An attack that\n"
+	.string "intensifies on\n"
+	.string "each hit.$"
+
+LilycoveCity_DepartmentStore_4F_Text_DynamicPunchDesc::
+	.string "Powerful and sure\n"
+	.string "to confuse,\n"
+	.string "but inaccurate.$"
+
+LilycoveCity_DepartmentStore_4F_Text_DoubleEdgeDesc::
+	.string "A life-risking\n"
+	.string "tackle that also\n"
+	.string "hurts the user.$"
+
+LilycoveCity_DepartmentStore_4F_Text_ExplosionDesc::
+	.string "Inflicts severe\n"
+	.string "damage but also\n"
+	.string "makes user faint.$"
+
+LilycoveCity_DepartmentStore_4F_Text_MimicDesc::
+	.string "Copies a move used\n"
+	.string "by the foe during\n"
+	.string "one battle.$"
+
+LilycoveCity_DepartmentStore_4F_Text_FirePunchDesc::
+	.string "A fiery punch\n"
+	.string "that may burn\n"
+	.string "the foe.$"
+
+LilycoveCity_DepartmentStore_4F_Text_IcePunchDesc::
+	.string "An icy punch\n"
+	.string "that may freeze\n"
+	.string "the foe.$"
+
+LilycoveCity_DepartmentStore_4F_Text_ThunderPunchDesc::
+	.string "An electrified\n"
+	.string "punch that may\n"
+	.string "paralyze the foe.$"
+
+LilycoveCity_DepartmentStore_4F_Text_IcyWindDesc::
+	.string "A chilling attack\n"
+	.string "that lowers the\n"
+	.string "foe's speed.$"
+
+LilycoveCity_DepartmentStore_4F_Text_SnoreDesc::
+	.string "A loud attack that\n"
+	.string "can be used only\n"
+	.string "while asleep.$"

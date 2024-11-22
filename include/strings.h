@@ -766,6 +766,20 @@ extern const u8 gText_PokemonMoves[];
 extern const u8 gText_Underpowered[];
 extern const u8 gText_WhenInDanger[];
 
+// Move Tutors
+
+extern const u8 gText_Rollout[];
+extern const u8 gText_FuryCutter[];
+extern const u8 gText_DynamicPunch[];
+extern const u8 gText_DoubleEdge[];
+extern const u8 gText_Explosion[];
+extern const u8 gText_Mimic[];
+extern const u8 gText_FirePunch[];
+extern const u8 gText_IcePunch[];
+extern const u8 gText_ThunderPunch[];
+extern const u8 gText_IcyWind[];
+extern const u8 gText_Snore[];
+
 // Battle Frontier Maniac
 extern const u8 BattleFrontier_Lounge2_Text_SalonMaidenIsThere[];
 extern const u8 BattleFrontier_Lounge2_Text_SalonMaidenSilverMons[];
@@ -895,6 +909,19 @@ extern const u8 BattleFrontier_Lounge7_Text_PsychUpDesc[];
 extern const u8 BattleFrontier_Lounge7_Text_IcePunchDesc[];
 extern const u8 BattleFrontier_Lounge7_Text_ThunderPunchDesc[];
 extern const u8 BattleFrontier_Lounge7_Text_FirePunchDesc[];
+
+// Lilycove Tutor Move Descriptions
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_RolloutDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_FuryCutterDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_DynamicPunchDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_DoubleEdgeDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_ExplosionDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_MimicDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_FirePunchDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_IcePunchDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_ThunderPunchDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_IcyWindDesc[];
+extern const u8 LilycoveCity_DepartmentStore_4F_Text_SnoreDesc[];
 
 extern const u8 gText_YourPartnerHasRetired[];
 

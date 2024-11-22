@@ -2405,6 +2405,16 @@ void ShowScrollableMultichoice(void)
         task->tKeepOpenAfterSelect = FALSE;
         task->tTaskId = taskId;
         break;
+    case SCROLL_MULTI_LILYCOVE_DEPT_TUTOR_MOVES_1:
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
+        task->tNumItems = 12;
+        task->tLeft = 15;
+        task->tTop = 1;
+        task->tWidth = 12;
+        task->tHeight = 12;
+        task->tKeepOpenAfterSelect = FALSE;
+        task->tTaskId = taskId;
+        break;
     default:
         gSpecialVar_Result = MULTI_B_PRESSED;
         DestroyTask(taskId);
@@ -2565,7 +2575,22 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_Underpowered,
         gText_WhenInDanger,
         gText_Exit
-    }
+    },
+    [SCROLL_MULTI_LILYCOVE_DEPT_TUTOR_MOVES_1] = 
+    {
+        gText_Rollout,
+        gText_FuryCutter,
+        gText_DynamicPunch,
+        gText_DoubleEdge,
+        gText_Explosion,
+        gText_Mimic,
+        gText_FirePunch,
+        gText_IcePunch,
+        gText_ThunderPunch,
+        gText_IcyWind,
+        gText_Snore,
+        gText_Exit
+    },
 };
 
 static void Task_ShowScrollableMultichoice(u8 taskId)
@@ -3072,7 +3097,7 @@ static void ShowBattleFrontierTutorWindow(u8 menu, u16 selection)
         .baseBlock = 28,
     };
 
-    if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_1 || menu == SCROLL_MULTI_BF_MOVE_TUTOR_2)
+    if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_1 || menu == SCROLL_MULTI_BF_MOVE_TUTOR_2 || menu == SCROLL_MULTI_LILYCOVE_DEPT_TUTOR_MOVES_1)
     {
         if (gSpecialVar_0x8006 == 0)
         {
@@ -3115,13 +3140,31 @@ static void ShowBattleFrontierTutorMoveDescription(u8 menu, u16 selection)
         gText_Exit,
     };
 
-    if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_1 || menu == SCROLL_MULTI_BF_MOVE_TUTOR_2)
+    static const u8 *const sLilycoveDeptStore_TutorMoveDescriptions[] =
+    {
+        LilycoveCity_DepartmentStore_4F_Text_RolloutDesc,
+        LilycoveCity_DepartmentStore_4F_Text_FuryCutterDesc,
+        LilycoveCity_DepartmentStore_4F_Text_DynamicPunchDesc,
+        LilycoveCity_DepartmentStore_4F_Text_DoubleEdgeDesc,
+        LilycoveCity_DepartmentStore_4F_Text_ExplosionDesc,
+        LilycoveCity_DepartmentStore_4F_Text_MimicDesc,
+        LilycoveCity_DepartmentStore_4F_Text_FirePunchDesc,
+        LilycoveCity_DepartmentStore_4F_Text_IcePunchDesc,
+        LilycoveCity_DepartmentStore_4F_Text_ThunderPunchDesc,
+        LilycoveCity_DepartmentStore_4F_Text_IcyWindDesc,
+        LilycoveCity_DepartmentStore_4F_Text_SnoreDesc,
+        gText_Exit,
+    };
+
+    if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_1 || menu == SCROLL_MULTI_BF_MOVE_TUTOR_2 || menu == SCROLL_MULTI_LILYCOVE_DEPT_TUTOR_MOVES_1)
     {
         FillWindowPixelRect(sTutorMoveAndElevatorWindowId, PIXEL_FILL(1), 0, 0, 96, 48);
+        if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_1)
+            AddTextPrinterParameterized(sTutorMoveAndElevatorWindowId, FONT_NORMAL, sBattleFrontier_TutorMoveDescriptions1[selection], 0, 1, 0, NULL);
         if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_2)
             AddTextPrinterParameterized(sTutorMoveAndElevatorWindowId, FONT_NORMAL, sBattleFrontier_TutorMoveDescriptions2[selection], 0, 1, 0, NULL);
         else
-            AddTextPrinterParameterized(sTutorMoveAndElevatorWindowId, FONT_NORMAL, sBattleFrontier_TutorMoveDescriptions1[selection], 0, 1, 0, NULL);
+            AddTextPrinterParameterized(sTutorMoveAndElevatorWindowId, FONT_NORMAL, sLilycoveDeptStore_TutorMoveDescriptions[selection], 0, 1, 0, NULL);
     }
 }
 

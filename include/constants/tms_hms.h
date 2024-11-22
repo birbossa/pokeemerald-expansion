@@ -51,7 +51,22 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(SIGNAL_BEAM) \
+    F(SWAGGER) \
+    F(SLEEP_TALK) \
+    F(SUBSTITUTE) \
+    F(ROCK_SLIDE) \
+    F(SHADOW_PUNCH) \
+    F(SWORDS_DANCE) \
+    F(DREAM_EATER) \
+    F(LEECH_LIFE) \
+    F(KNOCK_OFF) \
+    F(SONIC_BOOM) \
+    F(AIR_CUTTER) \
+    F(SPIKE_CANNON) \
+    F(THUNDER_WAVE) \
+    F(SEISMIC_TOSS)
 
 #define FOREACH_HM(F) \
     F(CUT) \

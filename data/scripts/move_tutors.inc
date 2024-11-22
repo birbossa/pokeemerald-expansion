@@ -268,3 +268,126 @@ MoveTutor_EventScript_OpenPartyMenu::
 MoveTutor_EventScript_CanOnlyBeLearnedOnce::
 	msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
 	return
+
+LilycoveCity_DepartmentStore_4F_EventScript_MoveTutor::
+	lock
+	faceplayer
+	msgbox LilycoveCity_DepartmentStore_4F_Text_TutorWelcome, MSGBOX_DEFAULT
+	goto LilycoveCity_DepartmentStore_4F_EventScript_TutorMove
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_TutorMove::
+	msgbox LilycoveCity_DepartmentStore_4F_Text_WhichMoveTeach
+	waitmessage
+	setvar VAR_TEMP_FRONTIER_TUTOR_ID, 0
+	setvar VAR_0x8004, SCROLL_MULTI_LILYCOVE_DEPT_TUTOR_MOVES_1
+	setvar VAR_0x8006, 0
+	special ShowScrollableMultichoice
+	waitstate
+	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
+	switch VAR_RESULT
+	case 0, LilycoveCity_DepartmentStore_4F_EventScript_RolloutTutor
+	case 1, LilycoveCity_DepartmentStore_4F_EventScript_FuryCutterTutor
+	case 2, LilycoveCity_DepartmentStore_4F_EventScript_DynamicPunchTutor
+	case 3, LilycoveCity_DepartmentStore_4F_EventScript_DoubleEdgeTutor
+	case 4, LilycoveCity_DepartmentStore_4F_EventScript_ExplosionTutor
+	case 5, LilycoveCity_DepartmentStore_4F_EventScript_MimicTutor
+	case 6, LilycoveCity_DepartmentStore_4F_EventScript_FirePunchTutor
+	case 7, LilycoveCity_DepartmentStore_4F_EventScript_IcePunchTutor
+	case 8, LilycoveCity_DepartmentStore_4F_EventScript_ThunderPunchTutor
+	case 9, LilycoveCity_DepartmentStore_4F_EventScript_IcyWindTutor
+	case 10, LilycoveCity_DepartmentStore_4F_EventScript_SnoreTutor
+	case 11, LilycoveCity_DepartmentStore_4F_EventScript_ExitTutorMoveSelect
+	case MULTI_B_PRESSED, LilycoveCity_DepartmentStore_4F_EventScript_ExitTutorMoveSelect
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_TeachTutorMove::
+	msgbox LilycoveCity_DepartmentStore_4F_Text_PleaseChoosePkmn, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special CloseBattleFrontierTutorWindow
+	special ChooseMonForMoveTutor
+	waitstate
+	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStore_4F_EventScript_CancelChooseMon
+	msgbox LilycoveCity_DepartmentStore_4F_Text_AndDone, MSGBOX_DEFAULT
+	copyvar VAR_0x8004, VAR_0x8008
+	release
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection::
+	special BufferBattleFrontierTutorMoveName
+	buffernumberstring STR_VAR_2, VAR_0x8008
+	msgbox LilycoveCity_DepartmentStore_4F_Text_TheMoveIsIt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LilycoveCity_DepartmentStore_4F_EventScript_ChooseNewMove
+	goto_if_ge VAR_TEMP_1, VAR_0x8008, LilycoveCity_DepartmentStore_4F_EventScript_TeachTutorMove
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ChooseNewMove
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ChooseNewMove::
+	goto LilycoveCity_DepartmentStore_4F_EventScript_TutorMove
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ExitTutorMoveSelect::
+	special CloseBattleFrontierTutorWindow
+	msgbox LilycoveCity_DepartmentStore_4F_Text_PleaseVisitAgain, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_CancelChooseMon::
+	msgbox LilycoveCity_DepartmentStore_4F_Text_PleaseVisitAgain, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_RolloutTutor::
+	setvar VAR_0x8005, MOVE_ROLLOUT
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_FuryCutterTutor::
+	setvar VAR_0x8005, MOVE_FURY_CUTTER
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_DynamicPunchTutor::
+	setvar VAR_0x8005, MOVE_DYNAMIC_PUNCH
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_DoubleEdgeTutor::
+	setvar VAR_0x8005, MOVE_DOUBLE_EDGE
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ExplosionTutor::
+	setvar VAR_0x8005, MOVE_EXPLOSION
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_MimicTutor::
+	setvar VAR_0x8005, MOVE_MIMIC
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_FirePunchTutor::
+	setvar VAR_0x8005, MOVE_FIRE_PUNCH
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_IcePunchTutor::
+	setvar VAR_0x8005, MOVE_ICE_PUNCH
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ThunderPunchTutor::
+	setvar VAR_0x8005, MOVE_THUNDER_PUNCH
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_IcyWindTutor::
+	setvar VAR_0x8005, MOVE_ICY_WIND
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_SnoreTutor::
+	setvar VAR_0x8005, MOVE_SNORE
+	goto LilycoveCity_DepartmentStore_4F_EventScript_ConfirmMoveSelection
+	end

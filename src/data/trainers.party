@@ -231,9 +231,17 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Carvanha @ Pecha Berry  
+Ability: Rough Skin  
+Level: 12  
+Naive Nature  
+IVs: 8 HP / 16 Atk / 12 Def / 24 SpA / 28 SpD / 29 Spe
+
+Zubat  
+Ability: Inner Focus  
+Level: 11  
+Lax Nature  
+IVs: 17 HP / 13 Atk / 8 Def / 9 SpA / 21 SpD / 21 Spe
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -2119,13 +2127,15 @@ Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whismur  
+Ability: Soundproof  
+Level: 10  
+Modest Nature  
+IVs: 25 HP / 3 Atk / 18 Def / 30 SpA / 19 SpD / 16 Spe  
+- Uproar
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -2523,13 +2533,23 @@ Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
 Music: Rich
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Pickup  
+Level: 11  
+Docile Nature  
+IVs: 8 HP / 0 Atk / 25 Def / 20 SpA / 12 SpD / 14 Spe
+
+Goldeen @ Nugget
+Ability: Swift Swim  
+Level: 11  
+IVs: 4 HP / 14 Atk / 21 Def / 8 SpA / 9 SpD / 12 Spe  
+- Peck  
+- Tail Whip  
+- Bubble  
+- Supersonic
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -5950,8 +5970,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 5  
+IVs: 23 HP / 8 Def / 24 SpA / 11 SpD / 20 Spe  
+
+Zigzagoon @ Oran Berry  
+Ability: Pickup  
+Level: 5  
+IVs: 20 HP / 20 Atk / 10 Def / 15 SpA / 10 SpD / 2 Spe
 
 === TRAINER_BILLY ===
 Name: BILLY
@@ -5962,13 +5987,20 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Spheal  
+Ability: Thick Fat  
+Level: 7  
+IVs: 5 HP / 20 Atk / 13 Def / 16 SpA / 26 SpD / 17 Spe
 
-Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Poochyena  
+Ability: Run Away  
+Level: 8  
+IVs: 14 HP / 26 Atk / 10 Def / 5 SpA / 14 SpD / 19 Spe
+
+Shroomish  
+Ability: Effect Spore  
+Level: 7  
+IVs: 24 HP / 12 Atk / 24 Def / 13 SpA / 28 SpD / 6 Spe
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -6215,13 +6247,20 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Oddish  
+Ability: Chlorophyll  
+Level: 6  
+IVs: 5 HP / 20 Atk / 23 Def / 13 SpA / 11 SpD / 7 Spe
 
 Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 7
+IVs: 8 HP / 16 Atk / 17 Def / 4 SpA / 28 SpD / 17 Spe
+
+Wingull  
+Ability: Keen Eye  
+Level: 6  
+Gentle Nature  
+IVs: 10 HP / 20 Atk / 7 Def / 30 SpA / 30 SpD / 11 Spe
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -6329,17 +6368,26 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magikarp  
+Ability: Swift Swim  
+Level: 15  
+Adamant Nature  
+IVs: 25 HP / 18 Atk / 20 Def / 12 SpA / 13 SpD  
+- Tackle
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magikarp  
+Ability: Swift Swim  
+Level: 15  
+Adamant Nature  
+IVs: 25 HP / 18 Atk / 20 Def / 12 SpA / 13 SpD  
+- Tackle
 
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magikarp  
+Ability: Swift Swim  
+Level: 15  
+Adamant Nature  
+IVs: 25 HP / 18 Atk / 20 Def / 12 SpA / 13 SpD  
+- Tackle
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -8806,13 +8854,23 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Seedot
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Seedot  
+Ability: Vital Spirit  
+Level: 13  
+IVs: 0 Atk  
+- Rapid Spin  
+- Harden  
+- Bide  
+- Nature Power
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lotad  
+Ability: Swift Swim  
+Level: 13  
+IVs: 30 HP / 6 Def / 18 SpA / 12 SpD / 20 Spe  
+- Absorb  
+- Bubble  
+- Nature Power  
+- Lick
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -11054,12 +11112,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 6
+IVs: 14 HP / 5 Atk / 16 Def / 2 SpA / 30 SpD / 24 Spe
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Skitty (F)  
+Ability: Cute Charm  
+Level: 7  
+Relaxed Nature  
+IVs: 20 HP / 29 Atk / 24 Def / 6 SpA / 12 SpD / 18 Spe
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -11070,13 +11130,26 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meditite  
+Ability: Pure Power  
+Level: 12  
+Mild Nature  
+IVs: 17 HP / 0 Atk / 16 Def / 5 SpA / 11 SpD / 12 Spe  
+- Confusion  
+- Detect
 
-Shroomish
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Marill  
+Ability: Huge Power  
+Level: 12  
+IVs: 28 HP / 5 Atk / 16 Def / 20 SpA / 17 SpD / 18 Spe  
+- Bubble  
+- Charm  
+- Tail Whip
+
+Skitty  
+Ability: Cute Charm  
+Level: 12  
+IVs: 16 HP / 25 Atk / 8 Def / 2 SpA / 0 SpD / 20 Spe
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -11258,12 +11331,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 6
+IVs: 10 HP / 25 Atk / 0 Def / 20 SpA / 10 SpD / 1 Spe
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Surskit  
+Ability: Swift Swim  
+Level: 5  
+IVs: 12 HP / 0 Atk / 5 Def / 10 SpA / 5 SpD / 30 Spe
 
 === TRAINER_LYLE ===
 Name: LYLE
@@ -11274,21 +11348,33 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wurmple  
+Ability: Shield Dust  
+Level: 6  
+IVs: 30 HP / 0 Atk / 2 Def / 5 SpA / 16 SpD / 20 Spe
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wurmple  
+Ability: Shield Dust  
+Level: 6  
+IVs: 23 HP / 0 Atk / 19 Def / 27 SpA / 25 SpD / 9 Spe
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Silcoon @ Oran Berry  
+Ability: Shed Skin  
+Level: 8  
+Bold Nature  
+IVs: 20 HP / 2 Atk / 19 Def / 20 SpA / 26 SpD / 5 Spe  
+- String Shot  
+- Tackle  
+- Harden
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cascoon @ Oran Berry  
+Ability: Shed Skin  
+Level: 8  
+Sassy Nature  
+IVs: 27 HP / 16 Atk / 12 Def / 18 SpA / 24 SpD / 17 Spe  
+- Poison Sting  
+- Tackle  
+- Harden
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -11363,13 +11449,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Surskit @ Chesto Berry  
+Ability: Swift Swim  
+Level: 10  
+IVs: 11 HP / 19 Atk / 23 Def / 6 SpA / 4 SpD / 21 Spe
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nincada  
+Ability: Compound Eyes  
+Level: 10  
+Relaxed Nature  
+IVs: 26 HP / 21 Atk / 17 Def / 19 SpA / 23 SpD / 27 Spe
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -12977,8 +13066,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Magikarp
-Level: 9
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Staryu  
+Ability: Illuminate  
+Level: 8  
+Hasty Nature  
+IVs: 19 HP / 17 Atk / 5 Def / 14 SpA / 3 SpD / 20 Spe
 
 === TRAINER_HAILEY ===
 Name: HAILEY

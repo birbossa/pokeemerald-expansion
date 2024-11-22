@@ -1834,3 +1834,16 @@ const u8 gText_Fertilize[] = _("FERTILIZE");
 const u8 gText_PlantBerry[] = _("PLANT BERRY");
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
+
+//Master Move Tutor Strings
+const u8 gText_Rollout[] = _("Rollout");
+const u8 gText_FuryCutter[] = _("Fury Cutter");
+const u8 gText_DynamicPunch[] = _("Dynamic Punch");
+const u8 gText_DoubleEdge[] = _("Double-Edge");
+const u8 gText_Explosion[] = _("Explosion");
+const u8 gText_Mimic[] = _("Mimic");
+const u8 gText_FirePunch[] = _("Fire Punch");
+const u8 gText_IcePunch[] = _("Ice Punch");
+const u8 gText_ThunderPunch[] = _("Thunder Punch");
+const u8 gText_IcyWind[] = _("Icy Wind");
+const u8 gText_Snore[] = _("Snore");
