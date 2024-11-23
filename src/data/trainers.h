@@ -15807,7 +15807,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_MAGIKARP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6389
-            .iv = TRAINER_PARTY_IVS(25, 18, 20, 31, 12, 13),
+            .iv = TRAINER_PARTY_IVS(25, 18, 20, 31, 13, 13),
 #line 6386
             .ability = ABILITY_SWIFT_SWIM,
 #line 6387
