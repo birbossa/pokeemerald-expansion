@@ -659,7 +659,7 @@
 #define FLAG_UNUSED_0x264  0x264 // Unused Flag
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
+#define FLAG_DISABLE_BAG_USE  0x267 // For disabling bag in trainer battles
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
